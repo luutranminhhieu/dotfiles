@@ -1,6 +1,6 @@
 [user]
-	name = luutranminhhieu
-	email = minhhieu191105@gmail.com
+	name = {{ .name | quote }}
+	email = {{ .email | quote }}
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
