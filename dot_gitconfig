@@ -1,0 +1,11 @@
+[user]
+	name = luutranminhhieu
+	email = minhhieu191105@gmail.com
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	autocrlf = false
